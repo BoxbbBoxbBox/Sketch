@@ -7,14 +7,28 @@ html {
   }
 
   header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
     font-size: 2rem;
     text-align: center;
     color: red;
     background-color: black;
-    margin-bottom: 2rem;
+    margin-bottom: .5rem;
   }
 
   .container {
     display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
     border: 2px solid black;
+    width: 958px;
+    height: 958px;
+  }
+
+  .square {
+    flex-basis: 960px;
+    background-color: yellow;
+    border: 2px solid gray;
   }
