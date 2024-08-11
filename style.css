@@ -6,29 +6,36 @@ html {
     box-sizing: inherit;
   }
 
-  header {
+  .wrapper {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: start;
     align-items: center;
     gap: 1rem;
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
     color: red;
     background-color: black;
     margin-bottom: .5rem;
+    padding: .5rem;
+  }
+
+  .all {
+    display: flex;
   }
 
   .container {
     display: flex;
     flex-wrap: wrap;
-    gap: 1px;
     border: 2px solid black;
-    width: 958px;
-    height: 958px;
+    width: 960.1px;
+    height: 960.1px;
+    box-sizing: content-box;
   }
 
   .square {
+    box-sizing: border-box;
     flex-basis: 960px;
     background-color: yellow;
-    border: 2px solid gray;
+    border: 2px solid black;
   }
