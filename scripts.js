@@ -1,5 +1,5 @@
 const container = document.querySelector(".container");
-let userInput = 100;
+let userInput = 10;
 let userCalculated = userInput ** 2;
 
 function addDivs(userCalculated) {
