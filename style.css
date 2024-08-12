@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+
   }
 
   *, *:before, *:after {
@@ -37,6 +38,39 @@ html {
   .square {
     box-sizing: border-box;
     flex-basis: 960px;
-    background-color: yellow;
+    background-color: var(--square_color, white);
     border: 2px solid black;
+    font-size: .1px;
+  }
+
+  .a {
+    --square_color: white;
+  }
+
+  .b {
+    --square_color: red;
+  }
+
+  .c {
+    --square_color: orange;
+  }
+  
+  .d {
+    --square_color: yellow;
+  }
+  
+  .e {
+    --square_color: green;
+  }
+  
+  .f {
+    --square_color: blue;
+  }
+  
+  .g {
+    --square_color: indigo;
+  }
+
+  .h {
+    --square_color: violet;
   }
