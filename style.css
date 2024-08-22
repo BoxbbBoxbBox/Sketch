@@ -1,76 +1,77 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-  }
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  color: red;
+  background-color: black;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  height: 100vh;
+}
 
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    gap: 1rem;
-    font-size: 1rem;
-    text-align: center;
-    color: red;
-    background-color: black;
-    margin-bottom: .5rem;
-    padding: .5rem;
-    height: 100vh;
-  }
+.all {
+  display: flex;
+}
 
-  .all {
-    display: flex;
-  }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  width: 960px;
+  height: 960px;
+  box-sizing: content-box;
+}
 
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    border: 2px solid black;
-    width: 960px;
-    height: 960px;
-    box-sizing: content-box;
-  }
+.square {
+  box-sizing: border-box;
+  flex-basis: 960px;
+  background-color: var(--square_color, white);
+  border: 2px solid black;
+  font-size: 0.1px;
+}
 
-  .square {
-    box-sizing: border-box;
-    flex-basis: 960px;
-    background-color: var(--square_color, white);
-    border: 2px solid black;
-    font-size: .1px;
-  }
+.a {
+  --square_color: white;
+}
 
-  .a {
-    --square_color: white;
-  }
+.b {
+  --square_color: red;
+}
 
-  .b {
-    --square_color: red;
-  }
+.c {
+  --square_color: orange;
+}
 
-  .c {
-    --square_color: orange;
-  }
-  
-  .d {
-    --square_color: yellow;
-  }
-  
-  .e {
-    --square_color: green;
-  }
-  
-  .f {
-    --square_color: blue;
-  }
-  
-  .g {
-    --square_color: indigo;
-  }
+.d {
+  --square_color: yellow;
+}
 
-  .h {
-    --square_color: violet;
-  }
+.e {
+  --square_color: green;
+}
+
+.f {
+  --square_color: blue;
+}
+
+.g {
+  --square_color: indigo;
+}
+
+.h {
+  --square_color: violet;
+}
